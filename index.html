@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#176274">
+  <meta name="description" content="SHIFA HEALTH CARE — home physiotherapy, recovery care, injections, elderly care and medical support. Connect with our team and arrange an appointment on WhatsApp.">
+  <title>SHIFA HEALTH CARE — Online Services</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="business.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Shifa Health Care home"><img src="assets/shifa-logo.jpeg" alt="SHIFA HEALTH CARE — ONLINE SERVICES" width="1408" height="768"></a>
+      <button class="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false" aria-label="Open navigation"><span></span><span></span><span></span></button>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="#home" class="nav-link active" aria-current="location">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#booking" class="nav-link">Book</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a class="button button-call header-call" data-phone href="tel:+923352053652"><span aria-hidden="true">↗</span> Call Now</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="status-dot"></span> Home care, with a human touch</p>
+            <h1>Professional Home<br class="desktop-break"> Healthcare at Your <span>Doorstep</span></h1>
+            <p class="hero-description">Home physiotherapy, IV drips, injections, post-surgery care, wound dressing, elderly care, lab collection, medical equipment, pharmacy support and trained attendants.</p>
+            <div class="hero-actions"><a class="button button-primary" data-book href="#booking">Book Appointment <span aria-hidden="true">↗</span></a><a class="button button-quiet" data-book href="#booking">Book via WhatsApp</a></div>
+            <div class="trust-cards"><div><strong>24/7</strong><span>Care requests</span></div><div><strong>At home</strong><span>Personal care</span></div><div><strong>One chat</strong><span>To get started</span></div></div>
+          </div>
+          <div class="hero-brand-card">
+            <div class="brand-image"><img src="assets/shifa-logo.jpeg" alt="Shifa Health Care — Online Services" width="1408" height="768" fetchpriority="high"></div>
+            <div class="hero-card-copy"><span class="small-rule" aria-hidden="true"></span><h2>Caring Hands at Your Doorstep</h2><p>Compassionate care for your family.<br>In the place you feel most comfortable.</p></div>
+            <div class="support-strip"><span aria-hidden="true">✚</span> Physiotherapy + Recovery + Home Support</div>
+          </div>
+        </div>
+        <div class="care-strip" aria-label="Our care services"><span><i aria-hidden="true">✓</i> Home Care</span><span><i aria-hidden="true">✓</i> Home Visits</span><span><i aria-hidden="true">✓</i> Elderly Care</span><span><i aria-hidden="true">✓</i> Recovery Care</span><span><i aria-hidden="true">✓</i> Personal Support</span></div>
+      </div>
+    </section>
+    <section id="services" class="section services-section">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Care for every stage of life</p><h2>Complete Home Care Services</h2><p>Professional support, personal attention. Choose a service to fill in your appointment request.</p></div>
+        <div id="service-grid" class="service-grid"></div>
+        <noscript><p class="no-script">Call <a href="tel:+923352053652">0335 2053652</a> or <a href="https://wa.me/923352053652">contact us on WhatsApp</a> for our full range of home-care services.</p></noscript>
+      </div>
+    </section>
+    <section id="how-it-works" class="section process-section"><div class="container"><div class="section-heading"><p class="eyebrow">A simple, personal process</p><h2>How It Works</h2><p>Choose your service, share your details and arrange care with our team on WhatsApp.</p></div><div class="steps-grid"><article class="step-card"><span class="step-number">1</span><h3>Select a Service</h3><p>Choose physiotherapy, IV drips, injections, recovery care or another home-care service.</p></article><article class="step-card"><span class="step-number">2</span><h3>Fill Your Details</h3><p>Add the patient’s details, location and preferred appointment time in the form.</p></article><article class="step-card"><span class="step-number">3</span><h3>Send on WhatsApp</h3><p>Use the form’s WhatsApp button, then send your prepared appointment request.</p></article><article class="step-card"><span class="step-number">4</span><h3>Arrange Your Care</h3><p>Our team discusses availability, pricing and the next steps with you.</p></article></div><div class="help-banner"><div><span class="tag">Here to help</span><h3>Not sure which service you need?</h3><p>Tell us what you are looking for. Our team will help you with your enquiry.</p></div><a class="button button-white" data-book href="#booking">Chat with our team <span aria-hidden="true">↗</span></a></div></div></section>
+    <section id="booking" class="section booking-section">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Appointment</p><h2>Book Home Care Service</h2><p>Fill in the form, then send your appointment request on WhatsApp.</p></div>
+        <form id="appointment-form" class="appointment-form" aria-label="Home care appointment request" aria-describedby="form-guidance">
+          <div class="form-grid">
+            <div class="form-field"><label for="booking-service">Service Required <span class="required-mark" aria-hidden="true">*</span></label><select id="booking-service" name="service" required><option value="" disabled selected>Select service</option></select></div>
+            <div class="form-field"><label for="patient-name">Patient Name <span class="required-mark" aria-hidden="true">*</span></label><input id="patient-name" name="patientName" type="text" placeholder="Enter patient name" autocomplete="name" maxlength="100" required></div>
+            <div class="form-field"><label for="patient-age">Age</label><input id="patient-age" name="age" type="number" placeholder="Patient age" min="0" max="120" step="1" inputmode="numeric"></div>
+            <div class="form-field"><label for="patient-gender">Gender</label><select id="patient-gender" name="gender"><option value="">Select gender</option><option>Male</option><option>Female</option><option>Other</option><option>Prefer not to say</option></select></div>
+            <div class="form-field"><label for="patient-phone">Contact Number <span class="required-mark" aria-hidden="true">*</span></label><input id="patient-phone" name="contactNumber" type="tel" placeholder="03XX-XXXXXXX" autocomplete="tel" maxlength="25" required></div>
+            <div class="form-field"><label for="patient-address">Address / Location <span class="required-mark" aria-hidden="true">*</span></label><input id="patient-address" name="address" type="text" placeholder="Precinct / Villa / Apartment" autocomplete="street-address" maxlength="300" required></div>
+            <div class="form-field"><label for="preferred-date">Preferred Date</label><input id="preferred-date" name="preferredDate" type="date"></div>
+            <div class="form-field"><label for="preferred-time">Preferred Time</label><input id="preferred-time" name="preferredTime" type="time"></div>
+            <div class="form-field form-field-wide"><label for="patient-notes">Medical Concern / Notes</label><textarea id="patient-notes" name="notes" rows="4" maxlength="1500" placeholder="Please write which service you need, patient condition, location and urgency."></textarea></div>
+          </div>
+          <button id="booking-link" class="button button-primary appointment-submit" type="submit" disabled>Send Appointment on WhatsApp</button>
+          <p id="form-guidance" class="form-guidance">* Required. Other fields are optional. Your details are included in the WhatsApp message; this website does not save them. Send the message in WhatsApp to request your appointment.</p>
+          <noscript><p class="form-guidance">Please enable JavaScript to prepare your appointment message, or call 0335 2053652.</p></noscript>
+        </form>
+      </div>
+    </section>
+    <section id="contact" class="section contact-section"><div class="container"><div class="section-heading"><p class="eyebrow">Contact Shifa Health Care</p><h2>Need Home Care?</h2><p>We’re here to help you arrange care for yourself and your loved ones.</p></div><div class="contact-grid"><a class="contact-card" data-phone href="tel:+923352053652"><span class="contact-icon" aria-hidden="true">☏</span><div><span>Call our care team</span><strong data-phone-text>0335 2053652</strong></div><span class="contact-arrow" aria-hidden="true">↗</span></a><a class="contact-card" data-book href="#booking"><span class="contact-icon" aria-hidden="true">✉</span><div><span>Book an appointment</span><strong>Request an appointment</strong></div><span class="contact-arrow" aria-hidden="true">↗</span></a><div class="contact-card"><span class="contact-icon" aria-hidden="true">⌖</span><div><span>Service area</span><strong data-area>Bahria Town, Karachi</strong></div></div><div class="contact-card"><span class="contact-icon" aria-hidden="true">◷</span><div><span>Get in touch</span><strong data-hours>24/7 care requests</strong></div></div></div><p class="availability-note">Please confirm service availability, your location and appointment fees with our team on WhatsApp.</p><p class="emergency-note"><span aria-hidden="true">ⓘ</span> For a life-threatening emergency, contact local emergency services or go to the nearest emergency department. WhatsApp is for care enquiries and appointment requests.</p></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><div><a class="footer-brand" href="#home">SHIFA HEALTH CARE</a><p>ONLINE SERVICES · Caring hands at your doorstep.</p></div><div class="footer-links"><a href="#services">Our services</a><a href="#contact">Contact us</a><span>© <span id="year">2026</span> Shifa Health Care</span></div></div></footer>
+  <div class="floating-actions" aria-label="Quick contact"><a class="float-call" data-phone href="tel:+923352053652"><span aria-hidden="true">☏</span> Call</a><a class="float-whatsapp" data-book href="#booking"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 11.6a8 8 0 0 1-11.9 7L4 20l1.3-4.2A8 8 0 1 1 20 11.6Z"/><path d="M9 7.5c-.8 0-1.2.6-1 1.5.5 2.8 2.8 5.1 5.6 5.8.9.2 1.7-.4 1.7-1.2l-2-1-1 .7c-1.2-.5-2.3-1.6-2.7-2.8l.5-.9-1.1-2.1Z"/></svg> WhatsApp</a></div>
+  <button id="help-open" class="help-toggle" type="button" aria-haspopup="dialog"><span aria-hidden="true">✦</span> Booking help</button>
+  <dialog id="help-dialog" aria-labelledby="help-title"><div class="dialog-top"><span class="tag">Shifa care team</span><button type="button" id="help-close" class="close-button" aria-label="Close booking help">×</button></div><h2 id="help-title">How can we help?</h2><p>Choose an option to open the appointment form and tell our team what you need.</p><div class="help-options"><a data-service="Help choosing a home-care service" href="#booking">Help me choose a service <span aria-hidden="true">↗</span></a><a data-service="Pricing and availability enquiry" href="#booking">Ask about prices & availability <span aria-hidden="true">↗</span></a><a data-service="An existing appointment enquiry" href="#booking">Discuss an existing appointment <span aria-hidden="true">↗</span></a></div><p class="dialog-note">Complete the form, then continue to WhatsApp. You choose when to send your message.</p></dialog>
+</body>
+</html>
